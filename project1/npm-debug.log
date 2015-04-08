@@ -1,0 +1,131 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', '-g', 'install', 'traceroute' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'traceroute', null ]
+5 verbose cache add name=undefined spec="traceroute" args=["traceroute",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'traceroute',
+6 verbose parsed url   path: 'traceroute',
+6 verbose parsed url   href: 'traceroute' }
+7 silly lockFile 4807910c-traceroute traceroute
+8 verbose lock traceroute /Users/crys/.npm/4807910c-traceroute.lock
+9 silly lockFile 4807910c-traceroute traceroute
+10 silly lockFile 4807910c-traceroute traceroute
+11 verbose addNamed [ 'traceroute', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile a703a711-traceroute traceroute@
+14 verbose lock traceroute@ /Users/crys/.npm/a703a711-traceroute.lock
+15 silly addNameRange { name: 'traceroute', range: '*', hasData: false }
+16 verbose request where is /traceroute
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 45a44cdb77d5737e
+19 verbose url raw /traceroute
+20 verbose url resolving [ 'https://registry.npmjs.org/', './traceroute' ]
+21 verbose url resolved https://registry.npmjs.org/traceroute
+22 verbose request where is https://registry.npmjs.org/traceroute
+23 info trying registry request attempt 1 at 12:51:55
+24 verbose etag "9HN87IZFO7U94QCGHM4RKQ129"
+25 http GET https://registry.npmjs.org/traceroute
+26 http 304 https://registry.npmjs.org/traceroute
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Tue, 07 Apr 2015 16:51:54 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Tue, 07 Apr 2015 16:51:54 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"9HN87IZFO7U94QCGHM4RKQ129"',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-jfk1025-JFK',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1428425514.671505,VS0,VE99',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/traceroute from cache
+29 silly addNameRange number 2 { name: 'traceroute', range: '*', hasData: true }
+30 silly addNameRange versions [ 'traceroute', [ '0.0.1', '0.0.2', '0.0.3' ] ]
+31 verbose addNamed [ 'traceroute', '0.0.3' ]
+32 verbose addNamed [ '0.0.3', '0.0.3' ]
+33 silly lockFile 20c3250a-traceroute-0-0-3 traceroute@0.0.3
+34 verbose lock traceroute@0.0.3 /Users/crys/.npm/20c3250a-traceroute-0-0-3.lock
+35 silly lockFile 20c3250a-traceroute-0-0-3 traceroute@0.0.3
+36 silly lockFile 20c3250a-traceroute-0-0-3 traceroute@0.0.3
+37 silly lockFile a703a711-traceroute traceroute@
+38 silly lockFile a703a711-traceroute traceroute@
+39 silly resolved [ { author: { name: 'James Weston', email: 'james@tenseven.org' },
+39 silly resolved     name: 'traceroute',
+39 silly resolved     description: 'Wrapper around native traceroute command',
+39 silly resolved     version: '0.0.3',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/jaw187/node-traceroute.git' },
+39 silly resolved     engines: { node: '~0.6.5' },
+39 silly resolved     dependencies: {},
+39 silly resolved     devDependencies: {},
+39 silly resolved     _npmUser: { name: 'jaw187', email: 'james@tenseven.org' },
+39 silly resolved     _id: 'traceroute@0.0.3',
+39 silly resolved     _engineSupported: true,
+39 silly resolved     _npmVersion: '1.0.106',
+39 silly resolved     _nodeVersion: 'v0.6.5',
+39 silly resolved     _defaultsLoaded: true,
+39 silly resolved     dist:
+39 silly resolved      { shasum: '809de8610816708d4cc1a4eb9eda2c63f8559d9b',
+39 silly resolved        tarball: 'http://registry.npmjs.org/traceroute/-/traceroute-0.0.3.tgz' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     directories: {},
+39 silly resolved     _shasum: '809de8610816708d4cc1a4eb9eda2c63f8559d9b',
+39 silly resolved     _from: 'traceroute@',
+39 silly resolved     _resolved: 'https://registry.npmjs.org/traceroute/-/traceroute-0.0.3.tgz',
+39 silly resolved     bugs: { url: 'https://github.com/jaw187/node-traceroute/issues' },
+39 silly resolved     readme: 'ERROR: No README data found!',
+39 silly resolved     homepage: 'https://github.com/jaw187/node-traceroute' } ]
+40 info install traceroute@0.0.3 into /usr/local/lib
+41 info installOne traceroute@0.0.3
+42 warn engine traceroute@0.0.3: wanted: {"node":"~0.6.5"} (current: {"node":"0.10.33","npm":"1.4.28"})
+43 verbose lib/node_modules/traceroute unbuild
+44 verbose tar unpack /Users/crys/.npm/traceroute/0.0.3/package.tgz
+45 silly lockFile bff8ed6c-ocal-lib-node-modules-traceroute tar:///usr/local/lib/node_modules/traceroute
+46 verbose lock tar:///usr/local/lib/node_modules/traceroute /Users/crys/.npm/bff8ed6c-ocal-lib-node-modules-traceroute.lock
+47 silly lockFile a4c7f388-npm-traceroute-0-0-3-package-tgz tar:///Users/crys/.npm/traceroute/0.0.3/package.tgz
+48 verbose lock tar:///Users/crys/.npm/traceroute/0.0.3/package.tgz /Users/crys/.npm/a4c7f388-npm-traceroute-0-0-3-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 error Error: EACCES, mkdir '/usr/local/lib/node_modules/traceroute'
+50 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/traceroute']
+50 error   errno: 3,
+50 error   code: 'EACCES',
+50 error   path: '/usr/local/lib/node_modules/traceroute',
+50 error   fstream_type: 'Directory',
+50 error   fstream_path: '/usr/local/lib/node_modules/traceroute',
+50 error   fstream_class: 'DirWriter',
+50 error   fstream_stack:
+50 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+50 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+50 error      'Object.oncomplete (fs.js:107:15)' ] }
+51 error Please try running this command again as root/Administrator.
+52 error System Darwin 14.1.0
+53 error command "node" "/usr/local/bin/npm" "-g" "install" "traceroute"
+54 error cwd /Users/crys/Dropbox/ITP/web/api/API1
+55 error node -v v0.10.33
+56 error npm -v 1.4.28
+57 error path /usr/local/lib/node_modules/traceroute
+58 error fstream_path /usr/local/lib/node_modules/traceroute
+59 error fstream_type Directory
+60 error fstream_class DirWriter
+61 error code EACCES
+62 error errno 3
+63 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/traceroute'
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+64 error fstream_stack Object.oncomplete (fs.js:107:15)
+65 verbose exit [ 3, true ]
