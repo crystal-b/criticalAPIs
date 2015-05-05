@@ -8,15 +8,17 @@ request(url, function(error, response, body) {
 
 	$ = cheerio.load(body);
 	$('.post').each(function() {
+		console.log($(this).text());
 		//console.log($(this).find('.result-title')(href));
 		//var year = $(this).find('.year').text();
-		var title = $(this).find('.url').text();
-		var description = $(this).find('.post-tagline').text();
-
+		//var title = $(this).find('.url').text();
+		//var description = $(this).find('.post-tagline').text();
+/*
 		var ideas = {
 			"title": title,
 			"description": description
 		};
 		console.log(ideas);
+*/
 	});
 });
