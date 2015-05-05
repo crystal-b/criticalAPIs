@@ -35,3 +35,30 @@ request(url, function(error, response, body) {
 		console.log(dullIdeas);
 	});
 });
+
+//set up routes
+route('/all', showAll);
+route('/max/:num', showIdeas);
+serveFiles('public');
+
+//show all
+function showAll(request) {
+	db.getAll(function(data) {
+		request.header("application/json");
+		request.respond(JSON.stringify(data));
+	});
+}
+
+//show ideas
+function showIdeas(request) {
+	var num = request.params.num;
+
+	db.getAll(function(data) {
+		var dullIdeas = [];
+		listings.push(data[i]);
+		request.header("application/json");
+		request.respond(JSON.stringify(dullIdeas));
+	});
+}
+
+start();
