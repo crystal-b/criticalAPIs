@@ -8,7 +8,8 @@ request(url, function(error, response, body) {
 
 	$ = cheerio.load(body);
 	$('.post').each(function() {
-		console.log($(this).find('.title').text());
+		var title = ($(this).find('.title').text());
+		console.log(title);
 		//console.log($(this).find('.result-title')(href));
 		//var year = $(this).find('.year').text();
 		//var title = $(this).find('.url').text();
