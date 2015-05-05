@@ -1,6 +1,16 @@
 var cheerio = require('cheerio');
 var request = require('request');
 
+var servi = require("servi");
+var app = new servi(true);
+
+//defaults to 3000 if I don't include this to set the port
+port(3001);
+
+//set up a database
+//looks for a file called "dullIdeas.db" or creates one if it doesn't exist
+var db = useDatabase("dullIdeas");
+
 var url = 'http://www.producthunt.com/';
 
 request(url, function(error, response, body) {
@@ -16,10 +26,12 @@ request(url, function(error, response, body) {
 		//var description = $(this).find('.post-tagline').text();
 
 		//this creates an object for each idea (title, description pair)
-		var ideas = {
+		var dullIdeas = {
 			title: title,
 			descrip: descrip
 		};
-		console.log(ideas);
+		//console.log(ideas);
+		db.add(dullIdeas);
+		console.log(dullIdeas);
 	});
 });
