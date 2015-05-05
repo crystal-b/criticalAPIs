@@ -1,11 +1,10 @@
-
+/*
 var l = {
-  title: title;
-  description: description;
+  title: title,
+  description: description
 }
-
 db.add(l);
-
+*/
 
 
 $(document).ready(function() {
