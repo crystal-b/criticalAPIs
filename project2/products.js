@@ -9,6 +9,9 @@ request(url, function(error, response, body) {
 	$ = cheerio.load(body);
 	$('.post').each(function() {
 		var title = ($(this).find('.title').text());
+		//console.log(title);
+		//this parseInt function only works for numbers, duh!
+		title = parseInt(title.substring());
 		console.log(title);
 		//console.log($(this).find('.result-title')(href));
 		//var year = $(this).find('.year').text();
