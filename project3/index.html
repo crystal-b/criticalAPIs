@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.3/p5.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="sketch.js"></script>
 	</head>
 	<body>
 		<div id="dull">Get a Dull Idea!</div>
-		<div id="image"><img src="Gluehlampe_01_KMJ.jpg" style="width: 10%" /></div>
+		<div class="container">
+			<div class="mask">
+				<div id="image"></div>
+			</div>
+		</div>
 		<div id ="title"></div>
 		<div id ="description"></div>
 	</body>
-
 </html>
